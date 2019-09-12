@@ -27,4 +27,18 @@ describe('rolflodash', function() {
       assert.deepStrictEqual(_.drop([1, 2, 3], 0), [1, 2, 3])
     });
   });
+  describe('isNaN', function() {
+    it("_.isNaN(NaN) equalTo true", function() {
+      assert.deepStrictEqual(_.isNaN(NaN), true)
+    });
+    it("_.isNaN(new Number(NaN)) equalTo true", function() {
+      assert.deepStrictEqual(_.isNaN(new Number(NaN)), true)
+    });
+    it("isNaN(undefined) equalTo true", function() {
+      assert.deepStrictEqual(isNaN(undefined), true)
+    });
+    it("_.isNaN(undefined) equalTo false", function() {
+      assert.deepStrictEqual(_.isNaN(undefined), false)
+    });
+  });
 });

@@ -21,3 +21,15 @@ _.drop = function (list, n = 1) {
   }
   return rlist;
 }
+
+//_.isNaN(NaN); => true
+//_.isNaN(new Number(NaN)); => true
+//isNaN(undefined); => true
+//_.isNaN(undefined); => false
+_.isNaN = function (value) {
+  if (value <= 0 || value >= 0 || value == undefined) {
+    return false;
+  } else {
+    return true;
+  }
+}
