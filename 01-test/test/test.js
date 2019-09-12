@@ -1,5 +1,6 @@
 const assert = require('assert')
 const _ = require('../rolflodash')
+var expect = require('chai').expect;
 
 describe('rolflodash', function() {
   describe('chunk', function() {
@@ -52,7 +53,8 @@ describe('rolflodash', function() {
   });
   describe('initial', function() {
     it("_.initial([1, 2, 3]) equalTo [1, 2]", function() {
-      assert.deepStrictEqual(_.initial([1, 2, 3]), [1, 2])
+      expect(_.initial([1, 2, 3])).to.be.a("array");
+      expect(_.initial([1, 2, 3])).to.eql([1, 2]);
     });
   });
 });

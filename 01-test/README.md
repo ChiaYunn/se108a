@@ -8,7 +8,6 @@
 ```
 PS D:\Project\Col\ccc\se108a\01-test> mocha
 
-
   rolflodash
     chunk
       √ _.chunk(['a', 'b', 'c', 'd'], 2) equalTo [ [ 'a', 'b' ], [ 'c', 'd' ] ]
@@ -30,6 +29,5 @@ PS D:\Project\Col\ccc\se108a\01-test> mocha
     initial
       √ _.initial([1, 2, 3]) equalTo [1, 2]
 
-
-  14 passing (20ms)
+  14 passing (17ms)
 ```
