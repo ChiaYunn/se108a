@@ -6,7 +6,8 @@
 範例
 
 ```
-PS D:\Project\col\ccc\se108a\01-test> mocha
+PS D:\Project\Col\ccc\se108a\01-test> mocha
+
 
   rolflodash
     chunk
@@ -18,6 +19,17 @@ PS D:\Project\col\ccc\se108a\01-test> mocha
       √ _.drop([1, 2, 3], 2) equalTo [3]
       √ _.drop([1, 2, 3], 5) equalTo []
       √ _.drop([1, 2, 3], 0) equalTo [1, 2, 3]
+    isNaN
+      √ _.isNaN(NaN) equalTo true
+      √ _.isNaN(new Number(NaN)) equalTo true
+      √ isNaN(undefined) equalTo true
+      √ _.isNaN(undefined) equalTo false
+    reverse
+      √ _.reverse(array) equalTo [3, 2, 1]
+      √ array after _.reverse(array) equalTo [3, 2, 1]
+    initial
+      √ _.initial([1, 2, 3]) equalTo [1, 2]
 
-  7 passing (11ms)
+
+  14 passing (20ms)
 ```

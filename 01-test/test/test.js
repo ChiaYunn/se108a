@@ -41,4 +41,18 @@ describe('rolflodash', function() {
       assert.deepStrictEqual(_.isNaN(undefined), false)
     });
   });
+  describe('reverse', function() {
+    var array = [1, 2, 3];
+    it("_.reverse(array) equalTo [3, 2, 1]", function() {
+      assert.deepStrictEqual(_.reverse(array), [3, 2, 1])
+    });
+    it("array after _.reverse(array) equalTo [3, 2, 1]", function() {
+      assert.deepStrictEqual(array, [3, 2, 1])
+    });
+  });
+  describe('initial', function() {
+    it("_.initial([1, 2, 3]) equalTo [1, 2]", function() {
+      assert.deepStrictEqual(_.initial([1, 2, 3]), [1, 2])
+    });
+  });
 });

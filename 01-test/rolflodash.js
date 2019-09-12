@@ -33,3 +33,20 @@ _.isNaN = function (value) {
     return true;
   }
 }
+
+//var array = [1, 2, 3];
+//_.reverse(array); => [3, 2, 1]
+//console.log(array); => [3, 2, 1]
+_.reverse = function (array) {
+  array = array.reverse();
+  return array;
+}
+
+//_.initial([1, 2, 3]); => [1, 2]
+_.initial = function (array) {
+  let rarray = [];
+  for (let i = 0; i < array.length - 1; i ++) {
+    rarray.push(array[i]);
+  }
+  return rarray;
+}
