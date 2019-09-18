@@ -27,11 +27,8 @@ _.drop = function (list, n = 1) {
 //isNaN(undefined); => true
 //_.isNaN(undefined); => false
 _.isNaN = function (value) {
-  if (value <= 0 || value >= 0 || value == undefined) {
-    return false;
-  } else {
-    return true;
-  }
+  var stats = (value <= 0 || value >= 0 || value == undefined) ? false : true;
+  return stats;
 }
 
 //var array = [1, 2, 3];
