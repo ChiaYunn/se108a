@@ -18,5 +18,6 @@
   "homepage": "https://github.com/rolf0504/se108a#readme",
   "devDependencies": {
     "chai": "^4.2.0"
-  }
+  },
+  "dependencies": {}
 }
