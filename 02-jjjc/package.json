@@ -1,0 +1,28 @@
+{
+  "name": "02-jjjc",
+  "version": "1.0.1",
+  "description": "npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolf0504/se108a.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolf0504/se108a/issues"
+  },
+  "homepage": "https://github.com/rolf0504/se108a#readme",
+  "dependencies": {
+    "user": "0.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
+}
