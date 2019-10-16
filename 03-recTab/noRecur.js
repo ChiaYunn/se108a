@@ -6,14 +6,14 @@ function fibonacci(n) {
     if (n === 1)
         return 1
     
-    var previous = 0
-    var current = 1
+    var p = 0
+    var c = 1
     
     for (var i = 2; i <= n; i ++) {
-        new_current = 3*current + 2*previous
-        previous = current
-        current = new_current
+        nC = 3*c + 2*p
+        p = c
+        c = nC
     }
     
-    return current
+    return c
 }
